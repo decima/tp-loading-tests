@@ -21,7 +21,7 @@ func main() {
 		muxes[i] = sync.Mutex{}
 	}
 	r := gin.New()
-	r.Use(jsonLoggerMiddleware())
+	//r.Use(jsonLoggerMiddleware())
 	r.GET("/p1", func(c *gin.Context) {
 
 		c.JSON(http.StatusOK, gin.H{
